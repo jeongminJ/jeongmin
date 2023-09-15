@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6end mobile-menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="https://kit.fontawesome.com/67c4c95eff.js" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/67c4c95eff.js" crossorigin="anonymous"></script>
+    <title>NavBar</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+        * {font-family: 'East Sea Dokdo', cursive;
+            }
+ body{background:linear-gradient(to bottom,rgb(58,3,4),black 50%, rgb(57,5,6));
+            height: 1000px;
+        }
+    #header{ height:90px;
+    }
+    #headerImg{display: block;
+                margin: 0 auto;
+                padding: 10px;}       
+    a:link {color : white;}   
+
+    a:visited { color:white; }
+        
+    a:hover {
+            color : rgb(255, 181, 181);
+        }
+    a:active {
+            color : white;
+        }     
+     a {
+      text-decoration-line: none;}
+        .main1{width:300px;
+                height: 200px;
+                margin:0 auto;
+                margin-bottom: 10px;
+                display: block;
+                border-radius: 15px;}
+        #view{float:right;}
+        #middle{
+                margin: 0 auto;}
+
+    
+
+        video{ margin-top:10px;
+            border-radius: 15px;}
+
+        h1 {color:white;font-size:35px;line-height: 1px;}
+        h2 {color:white; font-size:30px; text-align: end; margin-right: 20px;
+        margin-bottom:15px;}
+        p {color:antiquewhite; font-size: 20px; line-height: 10px;
+          letter-spacing: 0.05em;
+            }
+        #signature {margin : o auto;}
+        img{border-radius: 15px; }
+        #signature_img {float:left; 
+                        width: 300px;
+                        height: 190px;
+                        margin-bottom: 20px;}
+        #signature_ex { float: left; 
+                        width:300px;
+                        margin-left: 10px;}
+        #yang_img{float:left; 
+                 width: 300px;
+                height: 190px;
+                margin-bottom: 20px;}
+        #yang_ex{float: left; 
+                        width:300px;
+                        margin-left: 10px;}
+        #top_img{float:left; 
+                        width: 300px;
+                        height: 190px;
+                        margin-bottom: 20px;}
+        #top_ex{ float: left; 
+                        width:300px;
+                        margin-left: 10px;}
+        #sal_img{float:left; 
+                        width: 300px;
+                        height: 190px;
+                        margin-bottom: 20px;}
+        #sal_ex{float: left; 
+                        width:300px;
+                        margin-left: 10px;;}
+        #flower_img{float:left; 
+                        width: 300px;
+                        height: 190px;
+                        margin-bottom: 20px;;}
+        #flower_ex{ float: left; 
+                        width:300px;
+                        margin-left: 10px;}
+  
+        #container1{border:1px dashed gray;
+                    width: 320px;
+                    height: 445px;
+                    background-color: rgba(255, 255, 255, 0.056);
+                    border-radius: 25px;
+                    margin-bottom: 15px;}
+        content img {border-radius: 30px;}
+        #explain {width:320px;  
+                display:block;
+                margin : 0 auto;}
+        ul{list-style: none;
+            padding: 0px;
+            text-align: center;           }
+        li { display : inline-block;
+             text-align: center;
+            font-size: 20px;}
+        #li {padding: 11px;}
+        content{justify-content: center;}
+        footer{height:50px;}
+
+        #a{color:antiquewhite; font-size: 20px; line-height: 10px;
+          letter-spacing: 0.05em;}
+
+
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--background-color);
+        padding: 8px 12px;
+}
+
+.navbar__menu {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        justify-content: space-between;
+        width:100%;
+}
+.navbar__menu li {
+        padding: 8px 12px;
+        font-size : 40px;
+    }
+.navbar__menu li:hover {
+        background-color: var(--accent-color);
+        border-radius: 4px;
+}
+.navbar__sns {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+}
+.navbar__sns li {
+        padding: 8px 12px;
+        font-size:40px;
+}
+.navbar__toggleBtn {
+        display: none;
+        position: absolute;
+        right: 10%;
+        top:50px;
+        font-size: 30px;
+        color: var(--accent-color);
+}
+@media screen and (max-width: 768px) {
+        .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 8px 24px;
+            
+        }
+        .navbar__menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.056);
+
+        }
+        .navbar__menu li {
+                width: 100%;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.056);
+                font-size: 25px;
+        }
+        .navbar__sns {
+                display: none;
+                justify-content: center;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.056);
+
+         }
+        .navbar__toggleBtn {
+                 display: block;
+         }
+        .navbar__menu.active,
+        .navbar__sns.active {
+                display: flex;
+        }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="https://m6end.netlify.app"><img id="headerImg" src="image/가로 로고.png" width="150px" height="80px"></a>
+    </div>
+
+    <nav class="navbar">
+        <ul class="navbar__menu">
+                <li><a href="https://m6end.netlify.app">Brand</a></li>
+                <li><a href="https://m6endmenu.netlify.app">Menu</a></li>
+                <li><a href="https://m6end.netlify.app">Store</a></li>
+                <li><a href="https://m6end.netlify.app">Join with</a></li>
+                <li><a href="https://instagram.com/6end_official" width="35px" height="35px"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+        </ul>
+        <a href="#" class="navbar__toggleBtn"> <i class="fas fa-bars"></i> </a>
+</nav>
+
+
+
+    <div id="middle">
+    <content>
+        <video src="image/영상.mp4" width="100%" muted autoplay loop></video>
+        </div>
+        <ul>
+            <li id="li"><a href="https://6endsetmenu.netlify.app/">한판메뉴</a></li>
+            <li id="li"><a href="https://6endmenu.netlify.app/">단품메뉴</a></li>
+            <li id="li"><a href="https://6endsidemenu.netlify.app/">사이드메뉴</a></li>
+            <li id="li"><a href="https://6endlunch.netlify.app/">점심특선</a></li>
+        </ul>
+    <div id="explain">
+        <h1> </h1>
+  <div id="container1">
+    <div id="signature"></div>
+    <div id="signature_ex">
+    <p>데일리 최상급</p><h1>육끝 스페셜모듬 한판 <a id="a">(800g)</a></h1>
+    <img id="signature_img" src="image/content1.jpeg" >
+    <p>엄선된원육, 정성과고집의 숙성기간을 거쳐</p>
+    <p>당일최고의 다양한부위를 맛보실 수 있는 대표 메뉴!</p>
+    <p> (한우등심/갈비살/살치살)</p>
+    <h2>89,900원</h2>
+    </div>
+    </div>
+    <div id="container1">
+    <div id="yang_ex">
+    <p>양념한방</p><h1>한방 마구리살 한판 <a id="a">(900g)</a></h1>
+    <div id="yang"><img id="yang_img" src="image/content4.jpeg"> </div>
+    <p>느끼하지 않고 담백한 맛의 끝판왕! </p>
+    <p>오독오독한 식감과 쫀독한 식감의 조화!</p>
+    <p> 남녀노소 강추!</p>
+    <h2>66,000원</h2>
+    </div>
+    </div>
+    <div id="container1">
+    <div id="top_ex">
+    <p>프리미엄 최상등급</p><h1>프리미엄 갈비살 한판 <a id="a">(900g)</a></h1>
+    <div id="top"><img id="top_img" src="image/content3.jpeg"> </div>
+    <p>감칠맛의 끝판왕! </p>
+    <p>깊고 진한 고소한 육즙!</p>
+    <p>쫄깃쫄깃 씹는 맛이 일품!</p>
+    <h2>67,000원</h2>
+    </div>
+    </div>
+    <div id="container1">
+    <div id="sal_ex">
+    <p>프리미엄 최상등급</p><h1>프리미엄 살치살 한판<a id="a">(500g)</a></h1>
+    <div id="sal"><img id="sal_img" src="image/content5.jpeg"> </div>
+    <p>우리집 베스트 메인 메뉴!</p>
+    <p>육즙의 끝판왕!</p>
+    <p>한 번 먹으면 멈출 수 없는 중독감!</p>
+    <h2>69,900원</h2>
+    </div>
+    </div>
+     <div id="container1">
+    <div id="flower_ex">
+    <p>프리미엄 최상등급</p><h1>한우 암소 꽃등심 한판<a id="a">(400g)</a></h1>
+    <div id="flower"><img id="flower_img" src="image/content2.jpeg"> </div>
+    <p>고소한 육즙과 영양,육질 등에서</p>
+    <p>최고의 풍미를 자랑하는</p>
+    <p>50개월 미만 한우 암소</p>
+    <h2>69,900원</h2>
+    </div>
+    </div>
+</div>
+    </div>
+</div>
+<footer>
+</footer>
+<script>
+    const toggleBtn = document.querySelector('.navbar__toggleBtn');
+    const menu = document.querySelector('.navbar__menu');
+    const sns = document.querySelector('.navbar__sns');
+
+    toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        sns.classList.toggle('active');
+});
+
+</script>
+</body>
+</html>
+
